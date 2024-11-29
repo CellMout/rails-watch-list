@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Lists#index</h1>
+  <p>Find me in app/views/lists/index.html.erb</p>
+
+  <ul class="list-group">
+    <% @lists.each do |list| %>
+      <li class="list-group-item"><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to new_list_path, class: "btn btn-outline-primary mt-3" do %>
+  <div class="d-block align-middle">
+    <i class="fa-solid fa-plus d-inline"></i> <p class="ms-1 d-inline">Make a new list</p>
+  </div>
+  <% end %>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Lists#new</h1>
+  <p>Find me in app/views/lists/new.html.erb</p>
+
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit, "Create list", class: "btn btn-outline-primary" %>
+  <% end %>
+</div>
